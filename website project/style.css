@@ -1,0 +1,123 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: hsl(0, 0%, 61%);
+    position: relative;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 0%, 100%);
+    position: relative;
+    height: 8.75vw;
+    min-height: 2em;
+}
+
+h1{
+    position: absolute;
+    font-size: 4rem; 
+    color: hsl(0, 0%, 0%);
+}
+
+p{
+    font-size: 1rem;
+}
+
+@media (max-width:600px){
+    h1{
+        font-size: 2rem;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:260px){
+    h1{
+        font-size: 1.25rem;
+    }
+
+    p{
+        font-size: 0.75rem;
+    }
+}
+
+/* @media (min-width:800px){
+    #content{
+        
+    }
+} */
+
+#description{
+    background-color: hsl(0, 0%, 19%);
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+p{
+    color: hsl(0, 0%, 100%);
+}
+
+#content{
+    /* background-color: brown; */
+    display: flex;
+    gap: 1.5vw;
+    position: absolute;
+    margin-top: 5vw;
+    left: 50%;
+    transform: translate(-50%);
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+
+.subjectBox{
+   
+    border: solid 2px hsl(0, 0%, 0%);
+    background-color: hsl(0, 0%, 16%);
+    width: 10em;     
+    aspect-ratio: 4 / 5;     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.7s ease;
+}
+
+#physics:hover{
+    background-color: hsl(0, 100%, 67%);
+    transform: scale(1.15);
+}
+
+#chemistry:hover{
+    background-color: hsl(0, 100%, 67%);
+    transform: scale(1.15);
+}
+
+#biology:hover{
+    background-color: hsl(0, 100%, 67%);
+    transform: scale(1.15);
+}
+
+
+
+img{
+    position: fixed;
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+    translate: 0% -15%;  
+    z-index: -1; 
+}
+
